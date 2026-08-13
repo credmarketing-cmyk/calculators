@@ -75,8 +75,14 @@
   }
 }
 
-* {
-  border-color: var(--border);
+/* Scoped to @layer base so Tailwind's border-color utilities (border-brand,
+   focus:border-brand, etc.) — which live in @layer utilities — still win.
+   An unlayered `* { border-color }` rule would otherwise always beat any
+   layered utility, regardless of specificity. */
+@layer base {
+  * {
+    border-color: var(--border);
+  }
 }
 
 html {
