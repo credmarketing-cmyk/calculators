@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import PipeVolumeCalculator from "@/components/calculators/pages/PipeVolumeCalculator";
 
 export const metadata: Metadata = {
-  title: "Pipe Volume Calculator | ZenTrades",
+  title: "Pipe Volume Calculator | Fluid Capacity",
   description:
-    "Quickly and accurately calculate pipe volume and fluid mass. Simplify your pipe design and installations with real results.",
+    "Instantly find pipe volume and fluid capacity by length and diameter. Ideal for plumbers and engineers planning fills, drains and system designs.",
 };
 
 export default function Page() {

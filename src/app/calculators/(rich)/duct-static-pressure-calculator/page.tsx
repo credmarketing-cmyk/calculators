@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import DuctStaticPressureCalculator from "@/components/calculators/pages/DuctStaticPressureCalculator";
 
 export const metadata: Metadata = {
-  title: "Duct Static Pressure Calculator | ZenTrades",
+  title: "Duct Static Pressure Calculator | HVAC Tool",
   description:
-    "Optimize HVAC efficiency with our Duct Static Pressure Calculator. Accurately calculate pressure drops, account for fittings, and ensure smooth operation.",
+    "Calculate duct static pressure and airflow to diagnose HVAC issues. Use this free tool to balance systems, reduce noise and improve performance.",
 };
 
 export default function Page() {

@@ -15,7 +15,7 @@ const MIGRATED_SLUGS = new Set([
   "air-conditioner-btu-calculator",
   "duct-static-pressure-calculator",
   "pipe-volume-calculator",
-  "volumetric-flow-rate-calculator",
+  "flow-rate-calculator",
   "hvac-load-calculator",
 ]);
 

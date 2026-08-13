@@ -7,14 +7,14 @@ import "@fontsource/inter/800.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Calculators For Field Service Pros | ZenTrades",
+  title: "Free MEP & HVAC Calculators for Trade Professionals",
   description:
-    "Access 50+ specialized calculators designed by experts. From financial planning to engineering calculations, get accurate results in seconds with ZenTrades' professional-grade tools.",
-  metadataBase: new URL("https://calculators.zentrades.pro"),
+    "Use free electrical, HVAC, fire safety and plumbing calculators to size systems, estimate costs and design projects faster. Built for contractors and engineers.",
+  metadataBase: new URL("https://toolsfortrades.pro"),
   openGraph: {
-    title: "Calculators For Field Service Pros | ZenTrades",
+    title: "Free MEP & HVAC Calculators for Trade Professionals",
     description:
-      "Access 50+ specialized calculators designed by experts for fire, plumbing, electrical, and HVAC pros.",
+      "Use free electrical, HVAC, fire safety and plumbing calculators to size systems, estimate costs and design projects faster. Built for contractors and engineers.",
     siteName: "ZenTrades Calculators",
     type: "website",
   },

@@ -51,7 +51,7 @@ export const calculators: Calculator[] = [
     category: "Plumbing",
   },
   {
-    slug: "volumetric-flow-rate-calculator",
+    slug: "flow-rate-calculator",
     title: "Volumetric Flow Rate Calculator",
     description:
       "Calculate flow rates precisely using our volumetric flow rate calculator. It is fast, unit-flexible, and perfect for plumbing, HVAC, and fire safety pros.",

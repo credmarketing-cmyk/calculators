@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import FireAlarmBatteryCalculator from "@/components/calculators/pages/FireAlarmBatteryCalculator";
 
 export const metadata: Metadata = {
-  title: "Fire Alarm Battery Calculator | ZenTrades",
+  title: "Free Fire Alarm Battery Size Calculator",
   description:
-    "Determine the needed battery size in ampere-hours quickly and confidently, built on NFPA 72 standby and alarm load calculations.",
+    "Quickly size fire alarm standby batteries with our free calculator. Enter load and standby time to get accurate Ah capacity for compliant fire systems.",
 };
 
 export default function Page() {

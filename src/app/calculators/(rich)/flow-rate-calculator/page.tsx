@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import VolumetricFlowRateCalculator from "@/components/calculators/pages/VolumetricFlowRateCalculator";
 
 export const metadata: Metadata = {
-  title: "Volumetric Flow Rate Calculator | ZenTrades",
+  title: "Flow Rate Calculator for Piping Systems",
   description:
-    "Calculate flow rates precisely using our volumetric flow rate calculator. Fast, unit-flexible, and perfect for plumbing, HVAC, and fire safety pros.",
+    "Calculate flow rate, velocity and cross-sectional area for pipes. Improve pump sizing, line design and process efficiency with this free calculator.",
 };
 
 export default function Page() {
