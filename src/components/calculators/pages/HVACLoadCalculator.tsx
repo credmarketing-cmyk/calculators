@@ -170,7 +170,7 @@ export default function HVACLoadCalculator() {
                 <a className="btn btn-2" href="#how">
                   How it works
                 </a>
-                <Link className="btn btn-3" href="/#calculators">
+                <Link className="btn btn-3" href="/calculators#calculators">
                   Explore tools
                   <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
                     <path d="M3.5 10.5l7-7M5 3.5h5.5V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

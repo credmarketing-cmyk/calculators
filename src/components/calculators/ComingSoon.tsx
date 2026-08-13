@@ -17,7 +17,7 @@ export default function ComingSoon({ title }: { title: string }) {
         live.
       </p>
       <Link
-        href="/#custom"
+        href="/calculators#custom"
         className="group mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand to-brand-dark px-6 py-3 text-sm font-bold text-white shadow-[0_8px_24px_-8px_var(--brand-glow)] transition-transform hover:scale-[1.03] active:scale-[0.97]"
       >
         Request This Calculator

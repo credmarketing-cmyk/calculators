@@ -18,7 +18,7 @@ export default function CalculatorsLayout({
 
       <div className="back">
         <div className="back-in">
-          <Link href="/#calculators">
+          <Link href="/calculators#calculators">
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
               <path
                 d="M12 7H2M6 3L2 7l4 4"

@@ -22,7 +22,7 @@ export default function CalculatorShell({
 
         <div className="relative mx-auto max-w-4xl px-6 pb-14 pt-10 lg:px-8">
           <Link
-            href="/#calculators"
+            href="/calculators#calculators"
             className="group inline-flex items-center gap-1.5 text-sm font-semibold text-muted transition-colors hover:text-brand-dark"
           >
             <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />

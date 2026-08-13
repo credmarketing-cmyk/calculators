@@ -182,7 +182,7 @@ export default function FireSprinklerCostCalculator() {
                 <a className="btn btn-2" href="#how">
                   How it works
                 </a>
-                <Link className="btn btn-3" href="/#calculators">
+                <Link className="btn btn-3" href="/calculators#calculators">
                   Explore tools
                   <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
                     <path
