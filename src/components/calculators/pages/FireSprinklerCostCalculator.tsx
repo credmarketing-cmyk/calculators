@@ -844,7 +844,7 @@ export default function FireSprinklerCostCalculator() {
                   />
                 </svg>
               </a>
-              <a className="btn btn-2" href="#software">
+              <a className="btn btn-2" href="https://zentrades.pro" target="_blank" rel="noopener noreferrer">
                 See ZenTrades software
               </a>
             </div>

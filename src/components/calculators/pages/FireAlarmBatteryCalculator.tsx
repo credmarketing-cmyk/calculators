@@ -718,7 +718,7 @@ export default function FireAlarmBatteryCalculator() {
                   <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
-              <a className="btn btn-2" href="#software">
+              <a className="btn btn-2" href="https://zentrades.pro" target="_blank" rel="noopener noreferrer">
                 See ZenTrades software
               </a>
             </div>

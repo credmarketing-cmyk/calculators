@@ -175,13 +175,3 @@ body {
   opacity: 1;
 }
 
-/* HubSpot embeds: let them breathe and match the surrounding card */
-.hubspot-form-wrap {
-  width: 100%;
-}
-.hubspot-form-wrap iframe {
-  width: 100% !important;
-}
-.hubspot-form-wrap .hs-form-frame {
-  min-height: 260px;
-}
