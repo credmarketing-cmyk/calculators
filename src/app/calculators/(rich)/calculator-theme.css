@@ -18,9 +18,9 @@
   --dark:#111113;
   --shell:1240px;
   --gut:32px;
-  --display:var(--font-outfit),system-ui,sans-serif;
-  --body:var(--font-outfit),system-ui,sans-serif;
-  --mono:var(--font-outfit),system-ui,sans-serif;
+  --display:"Outfit",system-ui,sans-serif;
+  --body:"Outfit",system-ui,sans-serif;
+  --mono:"Outfit",system-ui,sans-serif;
 
   background:var(--ground);color:var(--ink);
   font-family:var(--body);font-size:15.5px;line-height:1.6;font-weight:400;

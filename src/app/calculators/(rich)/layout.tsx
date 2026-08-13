@@ -1,12 +1,10 @@
-import { Outfit } from "next/font/google";
 import Link from "next/link";
+import "@fontsource/outfit/300.css";
+import "@fontsource/outfit/400.css";
+import "@fontsource/outfit/500.css";
+import "@fontsource/outfit/600.css";
+import "@fontsource/outfit/700.css";
 import "./calculator-theme.css";
-
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export default function CalculatorsLayout({
   children,
@@ -14,7 +12,7 @@ export default function CalculatorsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`calc-page ${outfit.variable}`}>
+    <div className="calc-page">
       <div className="gutter l" />
       <div className="gutter r" />
 

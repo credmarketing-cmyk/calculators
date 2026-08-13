@@ -14,6 +14,10 @@
   --brand-2: #ff8a7a;
   --brand-dark: #b8283f;
   --brand-glow: rgba(238, 85, 102, 0.18);
+
+  /* Self-hosted via @fontsource (see layout.tsx) — no build-time network
+     fetch to Google Fonts, avoids Vercel build failures. */
+  --font-inter: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @theme inline {
