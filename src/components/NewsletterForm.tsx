@@ -12,6 +12,7 @@ declare global {
           portalId: string;
           formId: string;
           target: string;
+          region?: string;
         }) => void;
       };
     };
@@ -33,6 +34,7 @@ export default function NewsletterForm() {
           window.hbspt?.forms.create({
             portalId: "45865556",
             formId: "5d53e7d7-222e-40f9-a17a-4ca69a2cadb9",
+            region: "na1",
             target: `#${TARGET_ID}`,
           });
         }}

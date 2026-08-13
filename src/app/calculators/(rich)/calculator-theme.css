@@ -311,6 +311,11 @@
 @media(max-width:520px){.calc-page .nf{flex-direction:column;align-items:stretch}.calc-page .nf .btn{justify-content:center}}
 .calc-page .nf-note{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-top:16px}
 
+/* ---------- embedded HubSpot forms (newsletter, etc.) ---------- */
+.calc-page .hubspot-form-wrap{width:100%;max-width:440px;margin:0 auto;text-align:left}
+.calc-page .hubspot-form-wrap iframe{width:100% !important}
+.calc-page .hubspot-form-wrap .hs-form-frame{min-height:120px}
+
 /* ---------- foot ---------- */
 .calc-page .foot{border-top:1px solid var(--rule);padding:26px 0;display:flex;justify-content:space-between;
   gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;

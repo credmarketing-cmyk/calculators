@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import LeadGateForm, { isLeadUnlocked } from "./CalculatorLeadGate";
 import { useCountUp } from "./useCountUp";
+import NewsletterForm from "@/components/NewsletterForm";
 
 const CALCULATOR_NAME = "Power Factor Calculator";
 type Stage = "input" | "gate" | "result";
@@ -411,12 +412,12 @@ export default function PowerFactorCalculator() {
                   Export this estimate straight to ZenTrades
                 </li>
               </ul>
-              <Link className="btn btn-dark" href="/">
+              <a className="btn btn-dark" href="https://zentrades.pro" target="_blank" rel="noopener noreferrer">
                 Explore software
                 <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
                   <path d="M3.5 10.5l7-7M5 3.5h5.5V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </Link>
+              </a>
             </aside>
           </div>
         </div>
@@ -674,12 +675,7 @@ export default function PowerFactorCalculator() {
             technology and best practice across field service industries.
           </p>
           <div className="nf rv">
-            <div className="ipwrap">
-              <input type="email" placeholder="you@company.com" aria-label="Email address" />
-            </div>
-            <button className="btn btn-dark" type="button">
-              Subscribe
-            </button>
+            <NewsletterForm />
           </div>
           <div className="nf-note rv">One email a week · Unsubscribe anytime</div>
         </div>

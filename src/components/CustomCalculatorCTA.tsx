@@ -43,7 +43,7 @@ export default function CustomCalculatorCTA() {
         </Reveal>
 
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
-          {/* Form — the embed already ships as a fully styled card */}
+          {/* Custom-styled request form, submitted via HubSpot's Forms API */}
           <Reveal delay={100} className="mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none">
             <RequestCalculatorForm />
           </Reveal>
