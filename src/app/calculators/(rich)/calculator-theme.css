@@ -2,7 +2,14 @@
   Shared design system for calculator detail pages (/calculators/*).
   Scoped entirely under .calc-page so it never bleeds into the rest of the
   site (which uses its own token set in src/app/globals.css).
+
+  Wrapped in @layer components so generic resets below (e.g. `.calc-page *
+  {margin:0;padding:0}`) don't beat Tailwind utility classes used by shared
+  components dropped into .calc-page (like <NewsletterForm/>) — Tailwind's
+  own utilities live in @layer utilities, which is declared after
+  components and so wins regardless of specificity.
 */
+@layer components {
 
 .calc-page{
   --ground:#FBFAF9;
@@ -324,3 +331,5 @@
   .calc-page .rv{opacity:1;transform:none}
 }
 .calc-page :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+
+} /* @layer components */
