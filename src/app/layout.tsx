@@ -55,6 +55,13 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "y2bqho20w5");
           `}
         </Script>
+
+        {/* HiAimate chatbot widget */}
+        <Script
+          src="https://app.hiaimate.com/chatbot-widget.js"
+          data-widget-key="aw_E_8g9WOUHwSATFq5CHcTbPTgOAUjpzk1"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
