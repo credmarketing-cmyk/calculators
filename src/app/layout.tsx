@@ -58,8 +58,8 @@ export default function RootLayout({
 
         {/* HiAimate chatbot widget */}
         <Script
-          src="https://app.hiaimate.com/chatbot-widget.js"
-          data-widget-key="aw_E_8g9WOUHwSATFq5CHcTbPTgOAUjpzk1"
+          src="https://chatbot.hiaimate.com/chatbot-widget.js"
+          data-widget-key="aw_4wyjY-klVZJkz3vFJWG9NtTWTPBTA806"
           strategy="lazyOnload"
         />
       </body>
