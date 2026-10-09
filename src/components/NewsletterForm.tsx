@@ -10,6 +10,25 @@ const inputClass =
   "w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm font-medium text-foreground outline-none transition-all duration-200 placeholder:text-muted/60 focus:border-brand focus:shadow-[0_0_0_3px_var(--brand-glow)]";
 
 /**
+ * Submits an email to the HubSpot newsletter form. Shared by the newsletter
+ * sections and the site footer so every signup lands in the same list.
+ */
+export async function subscribeToNewsletter(email: string, pageName = "Newsletter") {
+  const res = await fetch(
+    `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_ID}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        fields: [{ name: "email", value: email }],
+        context: { pageName },
+      }),
+    }
+  );
+  return res.ok;
+}
+
+/**
  * Newsletter signup, submitted via HubSpot's Forms Submission API
  * (portal 45865556, form 5d53e7d7-…) with a custom-styled UI matching
  * the rest of the site, instead of embedding HubSpot's default iframe.
@@ -23,18 +42,7 @@ export default function NewsletterForm() {
     if (!email) return;
     setStatus("loading");
     try {
-      const res = await fetch(
-        `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_ID}`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            fields: [{ name: "email", value: email }],
-            context: { pageName: "Newsletter" },
-          }),
-        }
-      );
-      setStatus(res.ok ? "success" : "error");
+      setStatus((await subscribeToNewsletter(email)) ? "success" : "error");
     } catch {
       setStatus("error");
     }
