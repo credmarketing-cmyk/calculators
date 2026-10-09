@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className="antialiased">
         <SiteHeader />
         {children}
+        <SiteFooter />
 
         {/* Google tag (gtag.js) */}
         <Script
