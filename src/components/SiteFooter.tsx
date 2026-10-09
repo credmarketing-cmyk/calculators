@@ -7,7 +7,7 @@ import FooterNewsletter from "./FooterNewsletter";
 
 function FooterAnchor({ link }: { link: FooterLink }) {
   const className =
-    "group flex items-start gap-3.5 text-[15px] font-bold tracking-[0.06em] text-[#d4d1d3] transition-colors hover:text-white";
+    "group flex items-start gap-3.5 text-[15px] font-bold tracking-[0.04em] text-[#d4d1d3] transition-colors hover:text-white";
   const content = (
     <>
       <MoveRight
@@ -68,8 +68,8 @@ export default function SiteFooter() {
       />
 
       <div className="relative mx-auto max-w-[1240px] px-6 pb-12 pt-14 lg:px-8 lg:pt-16">
-        <div className="grid gap-12 lg:grid-cols-[1fr_230px] lg:gap-8">
-          <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 lg:grid-cols-[1fr_240px] lg:gap-10">
+          <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 xl:grid-cols-[repeat(4,auto)] xl:justify-between">
             {footerColumns.map((column) => (
               <div key={column.heading}>
                 <h2 className="text-lg font-bold uppercase tracking-[0.04em] text-white">
@@ -88,7 +88,7 @@ export default function SiteFooter() {
           </div>
 
           {/* Brand / contact card */}
-          <div className="self-start rounded-2xl border border-white/5 bg-[#121212] px-6 py-8 shadow-[0_0_34px_-6px_rgba(238,85,102,0.55)]">
+          <div className="self-start rounded-2xl border border-white/5 bg-[#121212] px-5 py-8 shadow-[0_0_34px_-6px_rgba(238,85,102,0.55)]">
             <div className="flex flex-col items-center text-center">
               <Image
                 src="/zentrades-ai-logo.webp"
@@ -101,20 +101,20 @@ export default function SiteFooter() {
                 <StarRating value={rating} />
               </div>
               <p className="mt-4 text-[15px] italic leading-relaxed text-white">{tagline}</p>
-              <div className="mt-6 flex items-center gap-3">
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
                 <Image
                   src="/google-play-badge.png"
                   alt="Get it on Google Play"
                   width={216}
                   height={64}
-                  className="h-9 w-auto"
+                  className="h-[29px] w-auto"
                 />
                 <Image
                   src="/app-store-badge.svg"
                   alt="Download on the App Store"
                   width={120}
                   height={40}
-                  className="h-9 w-auto"
+                  className="h-[29px] w-auto"
                 />
               </div>
             </div>
